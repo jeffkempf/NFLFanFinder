@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<parameters>
-  <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection Connection String used in web.config by the application to access the database." defaultValue="Data Source=(LocalDb)\v11.0;AttachDbFilename=|DataDirectory|\aspnet-WorkingVersionGetItDone-20150309074311.mdf;Initial Catalog=aspnet-WorkingVersionGetItDone-20150309074311;Integrated Security=True" tags="SqlConnectionString">
-    <parameterEntry kind="XmlFile" scope="C:\\Users\\Jeff\\Documents\\Visual\ Studio\ 2013\\Projects\\WorkingVersionGetItDone\\WorkingVersionGetItDone\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
-  </parameter>
-  <parameter name="GatoradeShowerDB-Web.config Connection String" description="GatoradeShowerDB Connection String used in web.config by the application to access the database." defaultValue="data source=mh8dle6c8l.database.windows.net;initial catalog=nflff_db;persist security info=True;user id=jeff;password=Diggler22;MultipleActiveResultSets=True;App=EntityFramework" tags="SqlConnectionString">
-    <parameterEntry kind="XmlFile" scope="C:\\Users\\Jeff\\Documents\\Visual\ Studio\ 2013\\Projects\\WorkingVersionGetItDone\\WorkingVersionGetItDone\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='GatoradeShowerDB']/@connectionString" />
-  </parameter>
-</parameters>
