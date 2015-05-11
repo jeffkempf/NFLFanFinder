@@ -1,4 +1,0 @@
-C:\Users\Jeff\Documents\Visual Studio 2013\Projects\WorkingVersionGetItDone\GatoradeShowerLibrary\bin\Release\GatoradeShowerLibrary.dll
-C:\Users\Jeff\Documents\Visual Studio 2013\Projects\WorkingVersionGetItDone\GatoradeShowerLibrary\bin\Release\GatoradeShowerLibrary.pdb
-C:\Users\Jeff\Documents\Visual Studio 2013\Projects\WorkingVersionGetItDone\GatoradeShowerLibrary\obj\Release\GatoradeShowerLibrary.dll
-C:\Users\Jeff\Documents\Visual Studio 2013\Projects\WorkingVersionGetItDone\GatoradeShowerLibrary\obj\Release\GatoradeShowerLibrary.pdb
