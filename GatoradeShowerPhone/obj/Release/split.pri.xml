@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="18396jeffkempf.NFLFanFinder" version="1.0" primary="true">
+		<Qualifiers>
+			<Language>EN-US</Language>
+			<Scale>240</Scale>
+		</Qualifiers>
+		<ResourceMapSubtree name="Files">
+			<NamedResource name="App.xbf" uri="ms-resource://18396jeffkempf.NFLFanFinder/Files/App.xbf">
+				<Candidate type="Path">
+					<Value>App.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="BarsItemPage.xbf" uri="ms-resource://18396jeffkempf.NFLFanFinder/Files/BarsItemPage.xbf">
+				<Candidate type="Path">
+					<Value>BarsItemPage.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="GamesItemPage.xbf" uri="ms-resource://18396jeffkempf.NFLFanFinder/Files/GamesItemPage.xbf">
+				<Candidate type="Path">
+					<Value>GamesItemPage.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="GatoradeShowerPhone.xr.xml" uri="ms-resource://18396jeffkempf.NFLFanFinder/Files/GatoradeShowerPhone.xr.xml">
+				<Candidate type="Path">
+					<Value>GatoradeShowerPhone.xr.xml</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="GroupsItemPage.xbf" uri="ms-resource://18396jeffkempf.NFLFanFinder/Files/GroupsItemPage.xbf">
+				<Candidate type="Path">
+					<Value>GroupsItemPage.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="HomeHub.xbf" uri="ms-resource://18396jeffkempf.NFLFanFinder/Files/HomeHub.xbf">
+				<Candidate type="Path">
+					<Value>HomeHub.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="LoginPage.xbf" uri="ms-resource://18396jeffkempf.NFLFanFinder/Files/LoginPage.xbf">
+				<Candidate type="Path">
+					<Value>LoginPage.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MainPage.xbf" uri="ms-resource://18396jeffkempf.NFLFanFinder/Files/MainPage.xbf">
+				<Candidate type="Path">
+					<Value>MainPage.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="SignUpPage.xbf" uri="ms-resource://18396jeffkempf.NFLFanFinder/Files/SignUpPage.xbf">
+				<Candidate type="Path">
+					<Value>SignUpPage.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="TeamsItemPage.xbf" uri="ms-resource://18396jeffkempf.NFLFanFinder/Files/TeamsItemPage.xbf">
+				<Candidate type="Path">
+					<Value>TeamsItemPage.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ViewMembers.xbf" uri="ms-resource://18396jeffkempf.NFLFanFinder/Files/ViewMembers.xbf">
+				<Candidate type="Path">
+					<Value>ViewMembers.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="WatchItemPage.xbf" uri="ms-resource://18396jeffkempf.NFLFanFinder/Files/WatchItemPage.xbf">
+				<Candidate type="Path">
+					<Value>WatchItemPage.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<ResourceMapSubtree name="Assets">
+				<NamedResource name="BarsLogo.png" uri="ms-resource://18396jeffkempf.NFLFanFinder/Files/Assets/BarsLogo.png">
+					<Candidate type="Path">
+						<Value>Assets\BarsLogo.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="EventsLogo.png" uri="ms-resource://18396jeffkempf.NFLFanFinder/Files/Assets/EventsLogo.png">
+					<Candidate type="Path">
+						<Value>Assets\EventsLogo.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="football_Image.png" uri="ms-resource://18396jeffkempf.NFLFanFinder/Files/Assets/football_Image.png">
+					<Candidate type="Path">
+						<Value>Assets\football_Image.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="football_Image_original.jpg" uri="ms-resource://18396jeffkempf.NFLFanFinder/Files/Assets/football_Image_original.jpg">
+					<Candidate type="Path">
+						<Value>Assets\football_Image_original.jpg</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="HomeLogo.png" uri="ms-resource://18396jeffkempf.NFLFanFinder/Files/Assets/HomeLogo.png">
+					<Candidate type="Path">
+						<Value>Assets\HomeLogo.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Logo.png" uri="ms-resource://18396jeffkempf.NFLFanFinder/Files/Assets/Logo.png">
+					<Candidate qualifiers="Scale-240" isDefault="true" type="Path">
+						<Value>Assets\Logo.scale-240.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="ProLogo.png" uri="ms-resource://18396jeffkempf.NFLFanFinder/Files/Assets/ProLogo.png">
+					<Candidate type="Path">
+						<Value>Assets\ProLogo.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SmallLogo.png" uri="ms-resource://18396jeffkempf.NFLFanFinder/Files/Assets/SmallLogo.png">
+					<Candidate qualifiers="Scale-240" isDefault="true" type="Path">
+						<Value>Assets\SmallLogo.scale-240.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SplashScreen.png" uri="ms-resource://18396jeffkempf.NFLFanFinder/Files/Assets/SplashScreen.png">
+					<Candidate qualifiers="Scale-240" isDefault="true" type="Path">
+						<Value>Assets\SplashScreen.scale-240.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square71x71Logo.png" uri="ms-resource://18396jeffkempf.NFLFanFinder/Files/Assets/Square71x71Logo.png">
+					<Candidate qualifiers="Scale-240" isDefault="true" type="Path">
+						<Value>Assets\Square71x71Logo.scale-240.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="StoreLogo.png" uri="ms-resource://18396jeffkempf.NFLFanFinder/Files/Assets/StoreLogo.png">
+					<Candidate qualifiers="Scale-240" isDefault="true" type="Path">
+						<Value>Assets\StoreLogo.scale-240.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Wide310x150Logo.png" uri="ms-resource://18396jeffkempf.NFLFanFinder/Files/Assets/Wide310x150Logo.png">
+					<Candidate qualifiers="Scale-240" isDefault="true" type="Path">
+						<Value>Assets\Wide310x150Logo.scale-240.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="WideLogo.png" uri="ms-resource://18396jeffkempf.NFLFanFinder/Files/Assets/WideLogo.png">
+					<Candidate qualifiers="Scale-240" isDefault="true" type="Path">
+						<Value>Assets\WideLogo.scale-240.png</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+		<ResourceMapSubtree name="System.Net.Http.Properties.CommonWebApiResources">
+			<NamedResource name="ArgumentInvalidAbsoluteUri" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.CommonWebApiResources/ArgumentInvalidAbsoluteUri">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Relative URI values are not supported: '{0}'. The URI must be absolute.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ArgumentInvalidHttpUriScheme" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.CommonWebApiResources/ArgumentInvalidHttpUriScheme">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Unsupported URI scheme: '{0}'. The URI scheme must be either '{1}' or '{2}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ArgumentMustBeGreaterThanOrEqualTo" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.CommonWebApiResources/ArgumentMustBeGreaterThanOrEqualTo">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Value must be greater than or equal to {0}.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ArgumentMustBeLessThanOrEqualTo" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.CommonWebApiResources/ArgumentMustBeLessThanOrEqualTo">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Value must be less than or equal to {0}.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ArgumentNullOrEmpty" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.CommonWebApiResources/ArgumentNullOrEmpty">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The argument '{0}' is null or empty.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ArgumentUriHasQueryOrFragment" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.CommonWebApiResources/ArgumentUriHasQueryOrFragment">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>URI must not contain a query component or a fragment identifier.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="InvalidEnumArgument" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.CommonWebApiResources/InvalidEnumArgument">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The value of argument '{0}' ({1}) is invalid for Enum type '{2}'.</Value>
+				</Candidate>
+			</NamedResource>
+		</ResourceMapSubtree>
+		<ResourceMapSubtree name="System.Net.Http.Properties.Resources">
+			<NamedResource name="AsyncResult_CallbackThrewException" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.Resources/AsyncResult_CallbackThrewException">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Async Callback threw an exception.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="AsyncResult_MultipleCompletes" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.Resources/AsyncResult_MultipleCompletes">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The IAsyncResult implementation '{0}' tried to complete a single operation multiple times. This could be caused by an incorrect application IAsyncResult implementation or other extensibility code, such as an IAsyncResult that returns incorrect CompletedSynchronously values or invokes the AsyncCallback multiple times.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="AsyncResult_MultipleEnds" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.Resources/AsyncResult_MultipleEnds">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>End cannot be called twice on an AsyncResult.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="AsyncResult_ResultMismatch" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.Resources/AsyncResult_ResultMismatch">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>An incorrect IAsyncResult was provided to an 'End' method. The IAsyncResult object passed to 'End' must be the one returned from the matching 'Begin' or passed to the callback provided to 'Begin'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ByteRangeStreamContentNoRanges" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.Resources/ByteRangeStreamContentNoRanges">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Found zero byte ranges. There must be at least one byte range provided.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ByteRangeStreamContentNotBytesRange" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.Resources/ByteRangeStreamContentNotBytesRange">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The range unit '{0}' is not valid. The range must have a unit of '{1}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ByteRangeStreamEmpty" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.Resources/ByteRangeStreamEmpty">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The stream over which '{0}' provides a range view must have a length greater than or equal to 1.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ByteRangeStreamInvalidFrom" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.Resources/ByteRangeStreamInvalidFrom">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The 'From' value of the range must be less than or equal to {0}.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ByteRangeStreamNoneOverlap" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.Resources/ByteRangeStreamNoneOverlap">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>None of the requested ranges ({0}) overlap with the current extent of the selected resource.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ByteRangeStreamNoOverlap" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.Resources/ByteRangeStreamNoOverlap">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The requested range ({0}) does not overlap with the current extent of the selected resource.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ByteRangeStreamNotSeekable" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.Resources/ByteRangeStreamNotSeekable">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The stream over which '{0}' provides a range view must be seekable.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ByteRangeStreamReadOnly" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.Resources/ByteRangeStreamReadOnly">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>This is a read-only stream.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="CannotHaveNullInList" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.Resources/CannotHaveNullInList">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>A null '{0}' is not valid.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="CannotUseMediaRangeForSupportedMediaType" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.Resources/CannotUseMediaRangeForSupportedMediaType">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The '{0}' of '{1}' cannot be used as a supported media type because it is a media range.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="CannotUseNullValueType" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.Resources/CannotUseNullValueType">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The '{0}' type cannot accept a null value for the value type '{1}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="CookieInvalidName" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.Resources/CookieInvalidName">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The specified value is not a valid cookie name.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="CookieNull" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.Resources/CookieNull">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Cookie cannot be null.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="DelegatingHandlerArrayContainsNullItem" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.Resources/DelegatingHandlerArrayContainsNullItem">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The '{0}' list is invalid because it contains one or more null items.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="DelegatingHandlerArrayHasNonNullInnerHandler" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.Resources/DelegatingHandlerArrayHasNonNullInnerHandler">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The '{0}' list is invalid because the property '{1}' of '{2}' is not null.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ErrorReadingFormUrlEncodedStream" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.Resources/ErrorReadingFormUrlEncodedStream">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Error reading HTML form URL-encoded data stream.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="FormUrlEncodedMismatchingTypes" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.Resources/FormUrlEncodedMismatchingTypes">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Mismatched types at node '{0}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="FormUrlEncodedParseError" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.Resources/FormUrlEncodedParseError">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Error parsing HTML form URL-encoded data, byte {0}.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="HttpInvalidStatusCode" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.Resources/HttpInvalidStatusCode">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Invalid HTTP status code: '{0}'. The status code must be between {1} and {2}.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="HttpInvalidVersion" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.Resources/HttpInvalidVersion">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Invalid HTTP version: '{0}'. The version must start with the characters '{1}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="HttpMessageContentAlreadyRead" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.Resources/HttpMessageContentAlreadyRead">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The '{0}' of the '{1}' has already been read.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="HttpMessageContentStreamMustBeSeekable" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.Resources/HttpMessageContentStreamMustBeSeekable">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The '{0}' must be seekable in order to create an '{1}' instance containing an entity body.  </Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="HttpMessageErrorReading" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.Resources/HttpMessageErrorReading">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Error reading HTTP message.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="HttpMessageInvalidMediaType" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.Resources/HttpMessageInvalidMediaType">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Invalid '{0}' instance provided. It does not have a content type header with a value of '{1}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="HttpMessageParserEmptyUri" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.Resources/HttpMessageParserEmptyUri">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>HTTP Request URI cannot be an empty string.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="HttpMessageParserError" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.Resources/HttpMessageParserError">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Error parsing HTTP message header byte {0} of message {1}.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="HttpMessageParserInvalidHostCount" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.Resources/HttpMessageParserInvalidHostCount">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>An invalid number of '{0}' header fields were present in the HTTP Request. It must contain exactly one '{0}' header field but found {1}.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="HttpMessageParserInvalidUriScheme" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.Resources/HttpMessageParserInvalidUriScheme">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Invalid URI scheme: '{0}'. The URI scheme must be a valid '{1}' scheme.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="InvalidArrayInsert" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.Resources/InvalidArrayInsert">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Invalid array at node '{0}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="JQuery13CompatModeNotSupportNestedJson" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.Resources/JQuery13CompatModeNotSupportNestedJson">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Traditional style array without '[]' is not supported with nested object at location {0}.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="JsonSerializerFactoryReturnedNull" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.Resources/JsonSerializerFactoryReturnedNull">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The '{0}' method returned null. It must return a JSON serializer instance.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="JsonSerializerFactoryThrew" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.Resources/JsonSerializerFactoryThrew">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The '{0}' method threw an exception when attempting to create a JSON serializer.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MaxDepthExceeded" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.Resources/MaxDepthExceeded">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The maximum read depth ({0}) has been exceeded because the form url-encoded data being read has more levels of nesting than is allowed.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MaxHttpCollectionKeyLimitReached" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.Resources/MaxHttpCollectionKeyLimitReached">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The number of keys in a NameValueCollection has exceeded the limit of '{0}'. You can adjust it by modifying the MaxHttpCollectionKeys property on the '{1}' class.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MediaTypeFormatterCannotRead" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.Resources/MediaTypeFormatterCannotRead">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The media type formatter of type '{0}' does not support reading because it does not implement the ReadFromStreamAsync method.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MediaTypeFormatterCannotReadSync" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.Resources/MediaTypeFormatterCannotReadSync">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The media type formatter of type '{0}' does not support reading because it does not implement the ReadFromStream method.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MediaTypeFormatterCannotWrite" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.Resources/MediaTypeFormatterCannotWrite">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The media type formatter of type '{0}' does not support writing because it does not implement the WriteToStreamAsync method.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MediaTypeFormatterCannotWriteSync" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.Resources/MediaTypeFormatterCannotWriteSync">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The media type formatter of type '{0}' does not support writing because it does not implement the WriteToStream method.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MediaTypeFormatterNoEncoding" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.Resources/MediaTypeFormatterNoEncoding">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>No encoding found for media type formatter '{0}'. There must be at least one supported encoding registered in order for the media type formatter to read or write content.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MediaTypeFormatter_BsonParseError_MissingData" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.Resources/MediaTypeFormatter_BsonParseError_MissingData">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Error parsing BSON data; unable to read content as a {0}.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MediaTypeFormatter_BsonParseError_UnexpectedData" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.Resources/MediaTypeFormatter_BsonParseError_UnexpectedData">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Error parsing BSON data; unexpected dictionary content: {0} entries, first key '{1}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MediaTypeFormatter_JsonReaderFactoryReturnedNull" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.Resources/MediaTypeFormatter_JsonReaderFactoryReturnedNull">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The '{0}' method returned null. It must return a JSON reader instance.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MediaTypeFormatter_JsonWriterFactoryReturnedNull" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.Resources/MediaTypeFormatter_JsonWriterFactoryReturnedNull">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The '{0}' method returned null. It must return a JSON writer instance.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MimeMultipartParserBadBoundary" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.Resources/MimeMultipartParserBadBoundary">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>MIME multipart boundary cannot end with an empty space.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MultipartFormDataStreamProviderNoContentDisposition" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.Resources/MultipartFormDataStreamProviderNoContentDisposition">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Did not find required '{0}' header field in MIME multipart body part.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MultipartStreamProviderInvalidLocalFileName" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.Resources/MultipartStreamProviderInvalidLocalFileName">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Could not determine a valid local file name for the multipart body part.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="NestedBracketNotValid" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.Resources/NestedBracketNotValid">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Nested bracket is not valid for '{0}' data at position {1}.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="NonNullUriRequiredForMediaTypeMapping" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.Resources/NonNullUriRequiredForMediaTypeMapping">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>A non-null request URI must be provided to determine if a '{0}' matches a given request or response message.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="NoReadSerializerAvailable" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.Resources/NoReadSerializerAvailable">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>No MediaTypeFormatter is available to read an object of type '{0}' from content with media type '{1}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ObjectAndTypeDisagree" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.Resources/ObjectAndTypeDisagree">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>An object of type '{0}' cannot be used with a type parameter of '{1}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ObjectContent_FormatterCannotWriteType" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.Resources/ObjectContent_FormatterCannotWriteType">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The configured formatter '{0}' cannot write an object of type '{1}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="QueryStringNameShouldNotNull" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.Resources/QueryStringNameShouldNotNull">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Query string name cannot be null.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ReadAsHttpMessageUnexpectedTermination" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.Resources/ReadAsHttpMessageUnexpectedTermination">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Unexpected end of HTTP message stream. HTTP message is not complete.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ReadAsMimeMultipartArgumentNoBoundary" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.Resources/ReadAsMimeMultipartArgumentNoBoundary">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Invalid '{0}' instance provided. It does not have a '{1}' content-type header with a '{2}' parameter.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ReadAsMimeMultipartArgumentNoContentType" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.Resources/ReadAsMimeMultipartArgumentNoContentType">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Invalid '{0}' instance provided. It does not have a content-type header value. '{0}' instances must have a content-type header starting with '{1}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ReadAsMimeMultipartArgumentNoMultipart" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.Resources/ReadAsMimeMultipartArgumentNoMultipart">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Invalid '{0}' instance provided. It does not have a content type header starting with '{1}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ReadAsMimeMultipartErrorReading" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.Resources/ReadAsMimeMultipartErrorReading">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Error reading MIME multipart body part.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ReadAsMimeMultipartErrorWriting" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.Resources/ReadAsMimeMultipartErrorWriting">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Error writing MIME multipart body part to output stream.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ReadAsMimeMultipartHeaderParseError" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.Resources/ReadAsMimeMultipartHeaderParseError">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Error parsing MIME multipart body part header byte {0} of data segment {1}.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ReadAsMimeMultipartParseError" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.Resources/ReadAsMimeMultipartParseError">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Error parsing MIME multipart message byte {0} of data segment {1}.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ReadAsMimeMultipartStreamProviderException" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.Resources/ReadAsMimeMultipartStreamProviderException">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The stream provider of type '{0}' threw an exception.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ReadAsMimeMultipartStreamProviderNull" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.Resources/ReadAsMimeMultipartStreamProviderNull">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The stream provider of type '{0}' returned null. It must return a writable '{1}' instance.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ReadAsMimeMultipartStreamProviderReadOnly" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.Resources/ReadAsMimeMultipartStreamProviderReadOnly">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The stream provider of type '{0}' returned a read-only stream. It must return a writable '{1}' instance.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ReadAsMimeMultipartUnexpectedTermination" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.Resources/ReadAsMimeMultipartUnexpectedTermination">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Unexpected end of MIME multipart stream. MIME multipart message is not complete.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="RemoteStreamInfoCannotBeNull" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.Resources/RemoteStreamInfoCannotBeNull">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The '{0}' method in '{1}' returned null. It must return a RemoteStreamResult instance containing a writable stream and a valid URL.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="SerializerCannotSerializeType" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.Resources/SerializerCannotSerializeType">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The '{0}' serializer cannot serialize the type '{1}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="UnMatchedBracketNotValid" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.Resources/UnMatchedBracketNotValid">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>There is an unmatched opened bracket for the '{0}' at position {1}.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="UnsupportedIndent" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.Resources/UnsupportedIndent">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Indentation is not supported by '{0}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="XmlMediaTypeFormatter_InvalidSerializerType" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.Resources/XmlMediaTypeFormatter_InvalidSerializerType">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The object of type '{0}' returned by {1} must be an instance of either XmlObjectSerializer or XmlSerializer.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="XmlMediaTypeFormatter_NullReturnedSerializer" uri="ms-resource://18396jeffkempf.NFLFanFinder/System.Net.Http.Properties.Resources/XmlMediaTypeFormatter_NullReturnedSerializer">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The object returned by {0} must not be a null value.</Value>
+				</Candidate>
+			</NamedResource>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>

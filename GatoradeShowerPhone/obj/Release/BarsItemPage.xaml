@@ -1,0 +1,203 @@
+﻿<Page
+    x:Class="GatoradeShowerPhone.BarsItemPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GatoradeShowerPhone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Page.Background>
+        <ImageBrush Stretch="UniformToFill" ImageSource="Assets/football_Image_original.jpg"/>
+    </Page.Background>
+
+    <Grid
+                HorizontalAlignment="Stretch">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="64.666"/>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <AppBarButton x:ConnectionId='1' 
+            Icon="Back"
+                                     
+            Grid.ColumnSpan="2" 
+            Height="78" 
+            Width="64">
+        </AppBarButton>
+
+        <!--Sets the background for the right column-->
+        <Border Background="Transparent"  
+                Grid.Column="1" 
+                Width="335" 
+                Padding="10" 
+                Opacity=".9"
+                HorizontalAlignment="Left" 
+                Margin="0.334,0,0,0">
+            <!--I removed the title ... They should know the name of the app-->
+        </Border>
+
+        <StackPanel
+            Grid.Column="1" 
+            Margin="0,0,0,512">
+            <TextBlock
+                Margin="57,40,108,40"
+                FontFamily="Georgia"
+                FontSize="50"
+                FontWeight="Bold"
+                HorizontalAlignment="Center"
+                Foreground="#DEF2C8" Width="170">
+                Bars
+            </TextBlock>
+        </StackPanel>
+
+        <!-- Scrollviewer that contains the listbox to display a bar-->
+        <ScrollViewer 
+            HorizontalScrollBarVisibility="Visible"
+            VerticalScrollBarVisibility="Visible"
+            Grid.Column="0" 
+            Grid.ColumnSpan="2"
+            Margin="0.167,133,-0.167,72">
+            <ListBox
+                x:Name="barsListBox"
+                    Height="auto"
+                    Background="#C5DAC1"
+                    Foreground="#14080E"
+                    FontFamily="Georgia"
+                    FontSize="18"
+                    FontWeight="Bold"
+                    Opacity=".7">
+            </ListBox>
+        </ScrollViewer>
+
+
+        <!-- To request to have a bar added -->
+        <Button x:ConnectionId='2'
+            x:Name="addABar"
+            BorderBrush="{x:Null}"
+            Foreground="#C5DAC1"
+            Background="Transparent"
+            HorizontalAlignment="Center"
+            FontFamily="Georgia"
+            FontSize="20" 
+            Grid.Column="0"
+            Grid.ColumnSpan="2"
+                              
+            Margin="-0.833,588,0.833,-5">
+            Don't see your favorite bar?
+        </Button>
+
+        <!-- Pop Up Section-->
+        <Popup
+            x:Name="popUp"
+            Width="400"
+            Grid.ColumnSpan="2" 
+            Opacity=".95"
+            Margin="0,0,-0.167,-12">
+            <StackPanel 
+                Background="#14080E"
+                Height="650">
+                <TextBlock
+                    FontFamily="Georgia"
+                    FontSize="40"
+                    FontWeight="Bold"
+                    Foreground="#DEF2C8"
+                    HorizontalAlignment="Center">
+                    Add it!
+                </TextBlock>
+
+                <TextBox
+                    x:Name="barNameBox"
+                    Width="400"
+                    FontFamily="Georgia"
+                    Background="#DEF2C8"
+                    Foreground="#14080E"
+                    BorderBrush="{x:Null}"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Header="Bar Name:">
+                </TextBox>
+                <TextBox
+                    x:Name="barStreetBox"
+                    Width="400"
+                    FontFamily="Georgia"
+                    Foreground="#14080E"
+                    Background="#DEF2C8"
+                    BorderBrush="{x:Null}"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center"
+                    Header="Street Address:">
+                </TextBox>
+                <TextBox
+                    x:Name="barCityBox"
+                    Width="400"
+                    FontFamily="Georgia"
+                    Foreground="#14080E"
+                    Background="#DEF2C8"
+                    BorderBrush="{x:Null}"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Header="City:">
+                </TextBox>
+                <TextBox
+                    x:Name="barStateBox"
+                    Width="400"
+                    FontFamily="Georgia"
+                    Foreground="#14080E"
+                    Background="#DEF2C8"
+                    BorderBrush="{x:Null}"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Header="State:">
+                </TextBox>
+                <TextBox
+                    x:Name="barZipBox"
+                    Width="400"
+                    FontFamily="Georgia"
+                    Foreground="#14080E"
+                    Background="#DEF2C8"
+                    BorderBrush="{x:Null}"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Header="Zip:">
+                </TextBox>
+                <TextBox
+                    x:Name="barPhoneBox"
+                    Width="400"
+                    FontFamily="Georgia"
+                    Foreground="#14080E"
+                    Background="#DEF2C8"
+                    BorderBrush="{x:Null}"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Header="Phone Number:">
+                </TextBox>
+
+                <StackPanel
+                    Orientation="Horizontal">
+                    <Button x:ConnectionId='3'
+                    x:Name="enterButton" 
+                                             
+                    BorderBrush="{x:Null}"
+                    HorizontalAlignment="Center"
+                    FontFamily="Georgia"
+                    FontSize="25"
+                    Foreground="#DEF2C8"
+                    Margin="40,0">
+                        Enter
+                    </Button>
+                    <Button x:ConnectionId='4'
+                    x:Name="cancelButton" 
+                                              
+                    BorderBrush="{x:Null}"
+                    HorizontalAlignment="Center"
+                    FontFamily="Georgia"
+                    FontSize="25"
+                    Foreground="#DEF2C8"
+                    Margin="40, -10">
+                        Cancel
+                    </Button>
+                </StackPanel>
+            </StackPanel>
+        </Popup>
+    </Grid>
+</Page>
+

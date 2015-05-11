@@ -1,0 +1,165 @@
+﻿<Page
+    x:Class="GatoradeShowerPhone.SignUpPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GatoradeShowerPhone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="#447604">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush Stretch="UniformToFill" 
+                        ImageSource="Assets/football_Image_original.jpg"/>
+        </Grid.Background>
+        
+        <StackPanel>
+            <TextBlock
+                FontFamily="Georgia"
+                FontSize="50"
+                FontWeight="Bold"
+                Foreground="#D5F2C6"
+                HorizontalAlignment="Center" >
+                Sign Up
+            </TextBlock>
+        </StackPanel>
+        
+        <StackPanel
+            Background="#447604"
+            Width="350"
+            Opacity=".9" 
+            Margin="0,84,0,0">
+
+            <!-- Code copied over from ViewMember popup-->
+            <TextBox
+                    x:Name="usernameBox"
+                    Width="350"
+                    FontFamily="Georgia"
+                    Background="#DEF2C8"
+                    Foreground="#14080E"
+                    BorderBrush="#DEF2C8"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Header="Username:">
+            </TextBox>
+            <PasswordBox
+                    x:Name="passwordBox"
+                    Width="350"
+                    FontFamily="Georgia"
+                    Background="#DEF2C8"
+                    Foreground="#14080E"
+                    BorderBrush="#DEF2C8"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Header="Password:">
+            </PasswordBox>
+            <PasswordBox
+                    x:Name="confirmPasswordBox"
+                    Width="350"
+                    FontFamily="Georgia"
+                    Background="#DEF2C8"
+                    Foreground="#14080E"
+                    BorderBrush="#DEF2C8"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Header="Confirm Password:">
+            </PasswordBox>
+            <TextBox
+                    x:Name="cityBox"
+                    Width="350"
+                    FontFamily="Georgia"
+                    Background="#DEF2C8"
+                    Foreground="#14080E"
+                    BorderBrush="#DEF2C8"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Header="City:">
+            </TextBox>
+            <TextBox
+                    x:Name="stateBox"
+                    Width="350"
+                    FontFamily="Georgia"
+                    Background="#DEF2C8"
+                    Foreground="#14080E"
+                    BorderBrush="#DEF2C8"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Header="State:">
+            </TextBox>
+            
+            <ComboBox
+                    x:Name="teamBox"
+                    Width="350"
+                    FontFamily="Georgia"
+                    Background="#DEF2C8"
+                    Foreground="#14080E"
+                    BorderBrush="#DEF2C8"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Header="Favorite Team:"
+                    SelectedIndex="0">
+                <ComboBoxItem>Arizona Cardinals</ComboBoxItem>
+                <ComboBoxItem>Atlanta Falcons</ComboBoxItem>
+                <ComboBoxItem>Baltimore Ravens</ComboBoxItem>
+                <ComboBoxItem>Buffalo Bills</ComboBoxItem>
+                <ComboBoxItem>Carolina Panthers</ComboBoxItem>
+                <ComboBoxItem>Chicago Bears</ComboBoxItem>
+                <ComboBoxItem>Cincinnati Bengals</ComboBoxItem>
+                <ComboBoxItem>Cleveland Browns</ComboBoxItem>
+                <ComboBoxItem>Dallas Cowboys</ComboBoxItem>
+                <ComboBoxItem>Denver Broncos</ComboBoxItem>
+                <ComboBoxItem>Detroit Lions</ComboBoxItem>
+                <ComboBoxItem>Green Bay Packers</ComboBoxItem>
+                <ComboBoxItem>Houston Texans</ComboBoxItem>
+                <ComboBoxItem>Indianapolis Colts</ComboBoxItem>
+                <ComboBoxItem>Jacksonville Jaguars</ComboBoxItem>
+                <ComboBoxItem>Kansas City Chiefs</ComboBoxItem>
+                <ComboBoxItem>Miami Dolphins</ComboBoxItem>
+                <ComboBoxItem>Minnesotta Vikings</ComboBoxItem>
+                <ComboBoxItem>New England Patriots</ComboBoxItem>
+                <ComboBoxItem>New Orleans Saints</ComboBoxItem>
+                <ComboBoxItem>New York Giants</ComboBoxItem>
+                <ComboBoxItem>New York Jets</ComboBoxItem>
+                <ComboBoxItem>Oakland Raiders</ComboBoxItem>
+                <ComboBoxItem>Philadelphia Eagles</ComboBoxItem>
+                <ComboBoxItem>Pittsburg Steelers</ComboBoxItem>
+                <ComboBoxItem>San Diego Chargers</ComboBoxItem>
+                <ComboBoxItem>San Francisco 49ers</ComboBoxItem>
+                <ComboBoxItem>Seattle Seahawks (Go 'Hawks!)</ComboBoxItem>
+                <ComboBoxItem>St. Louis Rams</ComboBoxItem>
+                <ComboBoxItem>Tampa Bay Buccaneers</ComboBoxItem>
+                <ComboBoxItem>Tennessee Titans</ComboBoxItem>
+                <ComboBoxItem>Washington Redskins</ComboBoxItem>
+            </ComboBox>
+            
+            <StackPanel Orientation="Horizontal">
+                <Button
+                        BorderBrush="{x:Null}"
+                        FontFamily="Georgia"
+                        Foreground="#DEF2C8"
+                        Margin="-5,0"
+                        HorizontalAlignment="Center" 
+                        Click="viewMembers_Click">
+                    View Members
+                </Button>
+                <Button
+                    x:Name="cancelButton" 
+                    FontFamily="Georgia"
+                    Foreground="#DEF2C8"
+                    Click="cancelButton_Click"
+                    BorderBrush="{x:Null}">
+                    Cancel
+                </Button>
+                <Button
+                    x:Name="enterButton" 
+                    FontFamily="Georgia"
+                    Foreground="#DEF2C8"
+                    Click="enterButton_Click"
+                    BorderBrush="{x:Null}">
+                    Enter
+                </Button>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>

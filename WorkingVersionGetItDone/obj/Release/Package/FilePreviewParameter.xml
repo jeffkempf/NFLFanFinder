@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="nflff" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\Jeff\\Documents\\Visual\ Studio\ 2013\\Projects\\WorkingVersionGetItDone\\WorkingVersionGetItDone\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\Jeff\\Documents\\Visual\ Studio\ 2013\\Projects\\WorkingVersionGetItDone\\WorkingVersionGetItDone\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="DefaultConnection-Web.config Connection String" description="" value="Data Source=tcp:mh8dle6c8l.database.windows.net,1433;Initial Catalog=nflff_db;User Id=jeff@mh8dle6c8l;Password=Diggler22" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Jeff\\Documents\\Visual\ Studio\ 2013\\Projects\\WorkingVersionGetItDone\\WorkingVersionGetItDone\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+  <parameter name="GatoradeShowerDB-Web.config Connection String" description="" value="Data Source=tcp:mh8dle6c8l.database.windows.net,1433;Initial Catalog=nflff_db;User Id=jeff@mh8dle6c8l;Password=Diggler22" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Jeff\\Documents\\Visual\ Studio\ 2013\\Projects\\WorkingVersionGetItDone\\WorkingVersionGetItDone\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='GatoradeShowerDB']/@connectionString" />
+  </parameter>
+</parameters>
