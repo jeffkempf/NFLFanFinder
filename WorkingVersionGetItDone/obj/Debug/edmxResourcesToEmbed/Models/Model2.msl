@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="nflff_dbModelStoreContainer" CdmEntityContainer="nflff_dbEntities">
+    <EntitySetMapping Name="C__MigrationHistory">
+      <EntityTypeMapping TypeName="nflff_dbModel.C__MigrationHistory">
+        <MappingFragment StoreEntitySet="__MigrationHistory">
+          <ScalarProperty Name="MigrationId" ColumnName="MigrationId" />
+          <ScalarProperty Name="ContextKey" ColumnName="ContextKey" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="ProductVersion" ColumnName="ProductVersion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Bars">
+      <EntityTypeMapping TypeName="nflff_dbModel.Bar">
+        <MappingFragment StoreEntitySet="Bars">
+          <ScalarProperty Name="BarID" ColumnName="BarID" />
+          <ScalarProperty Name="BarName" ColumnName="BarName" />
+          <ScalarProperty Name="BarStreet" ColumnName="BarStreet" />
+          <ScalarProperty Name="BarCity" ColumnName="BarCity" />
+          <ScalarProperty Name="BarState" ColumnName="BarState" />
+          <ScalarProperty Name="BarPhone" ColumnName="BarPhone" />
+          <ScalarProperty Name="BarZip" ColumnName="BarZip" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Events">
+      <EntityTypeMapping TypeName="nflff_dbModel.Event">
+        <MappingFragment StoreEntitySet="Events">
+          <ScalarProperty Name="EventID" ColumnName="EventID" />
+          <ScalarProperty Name="EventType" ColumnName="EventType" />
+          <ScalarProperty Name="EventLocationID" ColumnName="EventLocationID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Games">
+      <EntityTypeMapping TypeName="nflff_dbModel.Game">
+        <MappingFragment StoreEntitySet="Games">
+          <ScalarProperty Name="GameID" ColumnName="GameID" />
+          <ScalarProperty Name="HomeTeam" ColumnName="HomeTeam" />
+          <ScalarProperty Name="AwayTeam" ColumnName="AwayTeam" />
+          <ScalarProperty Name="StadiumID" ColumnName="StadiumID" />
+          <ScalarProperty Name="GameTime" ColumnName="GameTime" />
+          <ScalarProperty Name="GameDate" ColumnName="GameDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Groups">
+      <EntityTypeMapping TypeName="nflff_dbModel.Group">
+        <MappingFragment StoreEntitySet="Groups">
+          <ScalarProperty Name="GroupID" ColumnName="GroupID" />
+          <ScalarProperty Name="GroupName" ColumnName="GroupName" />
+          <ScalarProperty Name="GroupOwnerID" ColumnName="GroupOwnerID" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="GameID" ColumnName="GameID" />
+          <ScalarProperty Name="EventType" ColumnName="EventType" />
+          <ScalarProperty Name="EventLocationName" ColumnName="EventLocationName" />
+          <ScalarProperty Name="Confirmed" ColumnName="Confirmed" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MemberGroups">
+      <EntityTypeMapping TypeName="nflff_dbModel.MemberGroup">
+        <MappingFragment StoreEntitySet="MemberGroups">
+          <ScalarProperty Name="MemGrpID" ColumnName="MemGrpID" />
+          <ScalarProperty Name="GroupID" ColumnName="GroupID" />
+          <ScalarProperty Name="MemberID" ColumnName="MemberID" />
+          <ScalarProperty Name="GameID" ColumnName="GameID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Members">
+      <EntityTypeMapping TypeName="nflff_dbModel.Member">
+        <MappingFragment StoreEntitySet="Members">
+          <ScalarProperty Name="MemberID" ColumnName="MemberID" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="FavTeamID" ColumnName="FavTeamID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Stadiums">
+      <EntityTypeMapping TypeName="nflff_dbModel.Stadium">
+        <MappingFragment StoreEntitySet="Stadiums">
+          <ScalarProperty Name="StadiumID" ColumnName="StadiumID" />
+          <ScalarProperty Name="StadiumName" ColumnName="StadiumName" />
+          <ScalarProperty Name="StadiumAddress" ColumnName="StadiumAddress" />
+          <ScalarProperty Name="StadiumCity" ColumnName="StadiumCity" />
+          <ScalarProperty Name="StadiumState" ColumnName="StadiumState" />
+          <ScalarProperty Name="StadiumZip" ColumnName="StadiumZip" />
+          <ScalarProperty Name="HomeTeamID" ColumnName="HomeTeamID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Teams">
+      <EntityTypeMapping TypeName="nflff_dbModel.Team">
+        <MappingFragment StoreEntitySet="Teams">
+          <ScalarProperty Name="TeamID" ColumnName="TeamID" />
+          <ScalarProperty Name="TeamName" ColumnName="TeamName" />
+          <ScalarProperty Name="TeamCity" ColumnName="TeamCity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TeamsTests">
+      <EntityTypeMapping TypeName="nflff_dbModel.TeamsTest">
+        <MappingFragment StoreEntitySet="TeamsTest">
+          <ScalarProperty Name="teamID" ColumnName="teamID" />
+          <ScalarProperty Name="teamName" ColumnName="teamName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WatchParties">
+      <EntityTypeMapping TypeName="nflff_dbModel.WatchParty">
+        <MappingFragment StoreEntitySet="WatchParties">
+          <ScalarProperty Name="PartyID" ColumnName="PartyID" />
+          <ScalarProperty Name="MemberID" ColumnName="MemberID" />
+          <ScalarProperty Name="PartyStreet" ColumnName="PartyStreet" />
+          <ScalarProperty Name="PartyCity" ColumnName="PartyCity" />
+          <ScalarProperty Name="PartyState" ColumnName="PartyState" />
+          <ScalarProperty Name="Private" ColumnName="Private" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="ClickBarName" FunctionName="nflff_dbModel.Store.ClickBarName">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="nflff_dbModel.ClickBarName_Result">
+          <ScalarProperty Name="BarStreet" ColumnName="BarStreet" />
+          <ScalarProperty Name="BarCity" ColumnName="BarCity" />
+          <ScalarProperty Name="BarState" ColumnName="BarState" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ClickGroupName" FunctionName="nflff_dbModel.Store.ClickGroupName" />
+    <FunctionImportMapping FunctionImportName="ClickScheduledGame" FunctionName="nflff_dbModel.Store.ClickScheduledGame">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="nflff_dbModel.ClickScheduledGame_Result">
+          <ScalarProperty Name="BARS" ColumnName="BARS" />
+          <ScalarProperty Name="Stadium" ColumnName="Stadium" />
+          <ScalarProperty Name="WatchParties" ColumnName="WatchParties" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="deletemembergroup" FunctionName="nflff_dbModel.Store.deletemembergroup" />
+    <FunctionImportMapping FunctionImportName="getAllBars" FunctionName="nflff_dbModel.Store.getAllBars">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="nflff_dbModel.getAllBars_Result">
+          <ScalarProperty Name="BarID" ColumnName="BarID" />
+          <ScalarProperty Name="BarName" ColumnName="BarName" />
+          <ScalarProperty Name="BarStreet" ColumnName="BarStreet" />
+          <ScalarProperty Name="BarCity" ColumnName="BarCity" />
+          <ScalarProperty Name="BarState" ColumnName="BarState" />
+          <ScalarProperty Name="BarPhone" ColumnName="BarPhone" />
+          <ScalarProperty Name="BarZip" ColumnName="BarZip" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="getGroupName_for_unenrolledmember" FunctionName="nflff_dbModel.Store.getGroupName_for_unenrolledmember" />
+    <FunctionImportMapping FunctionImportName="getgroups" FunctionName="nflff_dbModel.Store.getgroups" />
+    <FunctionImportMapping FunctionImportName="getteams" FunctionName="nflff_dbModel.Store.getteams">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="nflff_dbModel.getteams_Result">
+          <ScalarProperty Name="HomeTeam" ColumnName="HomeTeam" />
+          <ScalarProperty Name="AwayTeam" ColumnName="AwayTeam" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

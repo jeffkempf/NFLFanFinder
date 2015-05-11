@@ -1,0 +1,81 @@
+﻿<Page
+    x:Class="GatoradeShowerPhone.GamesItemPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GatoradeShowerPhone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Page.Background>
+        <ImageBrush Stretch="UniformToFill" ImageSource="Assets/football_Image_original.jpg"/>
+    </Page.Background>
+
+    <!-- Sets Colums-->
+    <Grid
+                HorizontalAlignment="Stretch">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="64.666"/>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <AppBarButton x:ConnectionId='1' 
+                    Icon="Back"
+                                             Grid.ColumnSpan="2" Height="78" Width="64">
+        </AppBarButton>
+
+        <!--Sets border for column 2-->
+        <Border Background="Transparent"  
+                Grid.Column="1" 
+                Width="335" 
+                Padding="10" 
+                HorizontalAlignment="Left" 
+                Opacity=".9"
+                Margin="0.334,0,0,0">
+        </Border>
+
+        <!--Title panel-->
+        <StackPanel
+            Grid.Column="1" 
+            Margin="0,0,0,512">
+            <TextBlock
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                FontFamily="Georgia"
+                FontSize="40"
+                FontWeight="Bold"
+                Foreground="#DEF2C8" 
+                Margin="0,10"
+                Width="150">
+                Game
+            </TextBlock>
+            <TextBlock
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                FontFamily="Georgia"
+                FontSize="40"
+                FontWeight="Bold"
+                Foreground="#DEF2C8">
+                Schedules
+            </TextBlock>
+        </StackPanel>
+
+        <!--Scrollviewer for displaying the list of games for the upcoming season-->
+        <ScrollViewer 
+            HorizontalScrollBarVisibility="Visible"
+            VerticalScrollBarVisibility="Visible"
+            Grid.Column="0" 
+            Grid.ColumnSpan="2"
+            Margin="0,128,-0.334,10">
+            <ListBox
+                x:Name="gamesListBox"
+                Width="auto"
+                FontFamily="Georgia"
+                FontSize="18"
+                Background="#DEF2C8"
+                Foreground="#14080E" 
+                FontWeight="Bold"
+                Opacity=".7">
+            </ListBox>
+        </ScrollViewer>
+    </Grid>
+</Page>
+

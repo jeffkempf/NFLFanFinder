@@ -1,0 +1,336 @@
+﻿<Page
+    x:Class="GatoradeShowerPhone.GroupsItemPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GatoradeShowerPhone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Page.Background>
+        <ImageBrush Stretch="UniformToFill" ImageSource="Assets/football_Image_original.jpg"/>
+    </Page.Background>
+
+    <!--Sets the grids and rows-->
+    <Grid
+                HorizontalAlignment="Stretch">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="80"/>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <!--User tapped back button that is handled separately from the Hardware back button-->
+        <AppBarButton x:ConnectionId='1' 
+                    Icon="Back"
+                                             Height="78" Width="64"/>
+
+        <!--Sets border for the second column-->
+        <Border Background="Transparent"  
+                Grid.Column="1" 
+                Width="335" 
+                Padding="10" 
+                Opacity=".9"
+                HorizontalAlignment="Left" 
+                Margin="0.334,0,0,0"/>
+
+        <!--Title Panel-->
+        <StackPanel
+            Grid.Column="1" 
+            Margin="-10,0,0,540">
+            <TextBlock
+                x:Name="pageTitle"
+                Margin="0,30,20,30"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                FontFamily="Georgia"
+                FontSize="40"
+                FontWeight="Bold"
+                Foreground="#DEF2C8" Width="300">
+                Group Events
+            </TextBlock>
+        </StackPanel>
+
+        <!--User invoked selection sort button Panel (currently hidden)-->
+        <StackPanel
+            Orientation="Horizontal"
+            Grid.Column="0"
+            Grid.ColumnSpan="2"
+            Margin="0,74,0,512">
+
+            <Button
+            BorderBrush="{x:Null}"
+            FontFamily="Georgia"
+            FontSize="15"
+            FontWeight="Bold"
+            Foreground="#DEF2C8" 
+            Visibility="Collapsed">
+                Bar Meets
+            </Button>
+
+            <Button
+            BorderBrush="{x:Null}"
+            FontFamily="Georgia"
+            FontSize="15"
+            FontWeight="Bold"
+            Foreground="#DEF2C8"
+            Visibility="Collapsed">
+                Watch Parties
+            </Button>
+
+            <Button
+            BorderBrush="{x:Null}"
+            FontFamily="Georgia"
+            FontSize="15"
+            FontWeight="Bold"
+            Foreground="#DEF2C8"
+            Margin="10"
+            Visibility="Collapsed">
+                Stadium Meets
+            </Button>
+        </StackPanel>
+
+        <!--Scrollviewer for the list of GroupEvents-->
+        <!--Updates upon viewing-->
+        <ScrollViewer 
+            x:Name="firstViewer"
+            HorizontalScrollBarVisibility="Visible"
+            VerticalScrollBarVisibility="Visible"
+            Grid.Column="0" 
+            Grid.ColumnSpan="2"
+            Margin="0,128,0,72">
+            <ListBox x:ConnectionId='10'
+                SelectionMode="Single"
+                x:Name="groupsListBox"
+                Width="auto"
+                FontFamily="Georgia"
+                FontSize="18"
+                Background="#DEF2C8"
+                Foreground="#14080E" 
+                FontWeight="Bold"
+                Opacity=".7"
+                                                       
+                x:FieldModifier="public"/>
+        </ScrollViewer>
+
+        <!-- Panel 2 that is visible after clicking on a group-->
+        <!--User can view group details, members and join/leave a group from panel-->
+        <StackPanel
+            x:Name="panel2"
+            Visibility="Collapsed"
+            Grid.Column="0"
+            Grid.ColumnSpan ="2"
+            Opacity=".9"
+            Background="#14080E"
+            x:FieldModifier="public">
+            <StackPanel
+                Orientation="Horizontal"
+                Height="50">
+                <Button x:ConnectionId='9'
+                    x:Name="viewMembers"
+                    BorderBrush="{x:Null}"
+                    FontFamily="Georgia"
+                    Foreground="#DEF2C8"
+                    HorizontalAlignment="Center"
+                    Margin="120,0"
+                                             >
+                    View Members</Button>
+            </StackPanel>
+
+            <StackPanel
+                x:Name="joinleavepanel"
+                Visibility="Collapsed"
+                Height="50"
+                Orientation="Horizontal">
+                <Button x:ConnectionId='7'
+                    x:Name="joinButton"
+                    BorderBrush="{x:Null}"
+                    FontFamily="Georgia"
+                    Foreground="#DEF2C8"
+                    Margin="20,0"
+                                            >
+                    Join Group
+                </Button>
+                <Button x:ConnectionId='8'
+                    x:Name="leaveButton"
+                    BorderBrush="{x:Null}"
+                    FontFamily="Georgia"
+                    Foreground="#DEF2C8"
+                                             >
+                    Leave Group
+                </Button>
+            </StackPanel>
+            <StackPanel
+                x:Name="vieweventspanel"
+                Visibility="Collapsed"
+                Height="50"
+                Orientation="Horizontal">
+                <Button
+                    x:Name="viewEvents"
+                    BorderBrush="{x:Null}"
+                    FontFamily="Georgia"
+                    Foreground="#DEF2C8"
+                    Margin="17,0">
+                    View Events
+                </Button>
+                <Button
+                    x:Name="cancelEvents"
+                    BorderBrush="{x:Null}"
+                    FontFamily="Georgia"
+                    Foreground="#DEF2C8">
+                    Cancel Event
+                </Button>
+            </StackPanel>
+            <Border
+                Height="2"
+                Background="#DEF2C8"></Border>
+            <ListBox
+                x:Name="itemSelectedListBox"
+                FontFamily="Georgia"
+                FontSize="20"
+                Background="Transparent"
+                Foreground="#C5DAC1"
+                Margin="0,10">
+            </ListBox>
+            <ListBox x:ConnectionId='5'
+                x:Name="itemSentListbox"
+                FontFamily="Georgia"
+                FontSize="20"
+                Background="Transparent"
+                Foreground="#C5DAC1"
+                Margin="0,10" 
+                                                   />
+            <StackPanel Height="50">
+                <Button x:ConnectionId='6'
+                x:Name="toGroups"
+                FontFamily="Georgia"
+                FontSize="25"
+                Background="Transparent"
+                Foreground="#DEF2C8"
+                BorderBrush="{x:Null}"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center" 
+                                          >
+                    Back to Groups
+                </Button>
+            </StackPanel>
+        </StackPanel>
+
+        <!--Calls popUp-->
+        <Button x:ConnectionId='2'
+            Grid.Column="0"
+            Grid.ColumnSpan="2"
+            x:Name="createEventBottom"
+            BorderBrush="{x:Null}"
+            FontFamily="Georgia"
+            FontSize="20"
+            FontWeight="Bold"
+            Foreground="#DEF2C8"
+                                      
+            Margin="100,560,0,0">
+            Create An Event
+        </Button>
+
+        <!-- Pop up for user to create an event -->
+        <Popup
+            x:Name="addAnEventPop"
+            Grid.ColumnSpan="2">
+            <StackPanel 
+                Background="#14080E" 
+                Height="640"
+                Opacity=".95">
+                <TextBlock
+                    x:Name="gname"
+                    FontFamily="Georgia"
+                    FontSize="30"
+                    HorizontalAlignment="Center"
+                    Foreground="#DEF2C8"
+                    Margin="20">
+                    Create an Event
+                </TextBlock>
+                <TextBox
+                    x:Name="groupNameBox"
+                    Width="400"
+                    FontFamily="Georgia"
+                    Foreground="#14080E"
+                    Background ="#DEF2C8"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    BorderBrush="{x:Null}"
+                    Header="Group Name:">
+                </TextBox>
+                <ComboBox
+                    x:Name="eventTypeBox"
+                    Width="400"
+                    FontFamily="Georgia"
+                    Foreground="#14080E"
+                    Background="#DEF2C8"
+                    BorderBrush="{x:Null}"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center"
+                    Header="Event Type:">
+                </ComboBox>
+                <ComboBox
+                    x:Name="groupGameBox"
+                    Width="400"
+                    FontFamily="Georgia"
+                    Background="#DEF2C8"
+                    Foreground="Black"
+                    BorderBrush="{x:Null}"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Header="Game:">
+                </ComboBox>
+                <TextBox
+                    x:Name="groupLocationBox"
+                    Width="400"
+                    FontFamily="Georgia"
+                    Foreground="#14080E"
+                    Background="#DEF2C8"
+                    BorderBrush="{x:Null}"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Header="Location:">
+                </TextBox>
+                <!--Buttons within popup-->
+                <StackPanel
+                    Orientation="Horizontal">
+                    <Button x:ConnectionId='3'
+                    x:Name="enterButton" 
+                        BorderBrush="{x:Null}"
+                        FontFamily="Georgia"
+                        FontSize="20"
+                        Foreground="#DEF2C8"
+                        HorizontalAlignment="Center"
+                                                 
+                        Margin="40,50">
+                        Enter
+                    </Button>
+                    <Button x:ConnectionId='4'
+                        x:Name="cancelButton"
+                        BorderBrush="{x:Null}"
+                        FontFamily="Georgia"
+                        FontSize="20"
+                        Foreground="#DEF2C8"
+                        HorizontalAlignment="Center"
+                                                  
+                        Margin="50,0">
+                        Cancel
+                    </Button>
+                </StackPanel>
+                <!--Displays error if a required field is left blank by user-->
+                <ListBox
+                x:Name="errorListBox"
+                Height="80"
+                Background="Transparent"
+                Foreground="Red"
+                    FontSize="20">
+                </ListBox>
+            </StackPanel>
+        </Popup>
+    </Grid>
+</Page>
+    
+    
+

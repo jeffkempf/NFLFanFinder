@@ -1,0 +1,4 @@
+MainPackage=C:\Users\Jeff\Documents\Visual Studio 2013\Projects\WorkingVersionGetItDone\GatoradeShowerPhone\bin\Release\GatoradeShowerPhone_2.0.0.3_Bundle\GatoradeShowerPhone_2.0.0.3_AnyCPU.appx
+SymbolPackage=C:\Users\Jeff\Documents\Visual Studio 2013\Projects\WorkingVersionGetItDone\GatoradeShowerPhone\AppPackages\GatoradeShowerPhone_2.0.0.3_Test\GatoradeShowerPhone_2.0.0.3_AnyCPU.appxsym
+ResourcePack=C:\Users\Jeff\Documents\Visual Studio 2013\Projects\WorkingVersionGetItDone\GatoradeShowerPhone\bin\Release\GatoradeShowerPhone_2.0.0.3_Bundle\GatoradeShowerPhone_2.0.0.3_scale-100.appx
+ResourcePack=C:\Users\Jeff\Documents\Visual Studio 2013\Projects\WorkingVersionGetItDone\GatoradeShowerPhone\bin\Release\GatoradeShowerPhone_2.0.0.3_Bundle\GatoradeShowerPhone_2.0.0.3_scale-140.appx

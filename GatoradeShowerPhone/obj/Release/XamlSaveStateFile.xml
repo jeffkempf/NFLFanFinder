@@ -1,0 +1,9 @@
+<XamlCompilerSaveState>
+  <ReferenceAssemblyList>
+    <LocalAssembly PathName="c:\users\jeff\documents\visual studio 2013\projects\workingversiongetitdone\gatoradeshowerphone\obj\release\intermediatexaml\gatoradeshowerphone.exe" HashGuid="7c2a3981-8ce8-ca2c-68f6-ce971ee9fb06" />
+    <ReferenceAssembly PathName="c:\users\jeff\documents\visual studio 2013\projects\workingversiongetitdone\packages\newtonsoft.json.6.0.4\lib\portable-net45+wp80+win8+wpa81\newtonsoft.json.dll" HashGuid="02b12ba6-881e-6b8a-1687-5b2ee1851a11" />
+    <ReferenceAssembly PathName="c:\users\jeff\documents\visual studio 2013\projects\workingversiongetitdone\packages\microsoft.net.http.2.2.29\lib\wpa81\system.net.http.extensions.dll" HashGuid="794366f8-cc6d-f0fa-3d07-33b45136e193" />
+    <ReferenceAssembly PathName="c:\users\jeff\documents\visual studio 2013\projects\workingversiongetitdone\packages\microsoft.aspnet.webapi.client.5.2.3\lib\portable-wp8+netcore45+net45+wp81+wpa81\system.net.http.formatting.dll" HashGuid="2be584ba-1a95-71f0-a34d-ef121720ead4" />
+    <ReferenceAssembly PathName="c:\users\jeff\documents\visual studio 2013\projects\workingversiongetitdone\packages\microsoft.net.http.2.2.29\lib\wpa81\system.net.http.primitives.dll" HashGuid="7b71418d-e056-7613-c839-85fb8f6472a6" />
+  </ReferenceAssemblyList>
+</XamlCompilerSaveState>

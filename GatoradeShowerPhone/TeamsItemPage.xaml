@@ -1,0 +1,110 @@
+﻿<Page
+    x:Class="GatoradeShowerPhone.TeamsItemPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GatoradeShowerPhone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Page.Background>
+        <ImageBrush Stretch="UniformToFill" ImageSource="Assets/football_Image_original.jpg"/>
+    </Page.Background>
+
+    <Grid
+                HorizontalAlignment="Stretch">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="64.666"/>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <AppBarButton 
+            Icon="Back"
+            Click="backButton_Click" 
+            Grid.ColumnSpan="2" 
+            Height="78" 
+            Width="64">
+        </AppBarButton>
+
+        <Border Background="Transparent"  
+                Grid.Column="1" 
+                Width="335" 
+                Padding="10" 
+                HorizontalAlignment="Left" 
+                Margin="0.334,0,0,0">
+        </Border>
+
+        <StackPanel
+            Grid.Column="1" 
+            Margin="0,0,0,512">
+            <TextBlock
+        		Width="282"
+        		Margin="43,45,10,0"
+        		VerticalAlignment="Center"
+        		HorizontalAlignment="Center"
+        		FontFamily="Georgia"
+        		FontSize="45"
+        		FontWeight="Bold"
+        		Foreground="#DEF2C8">
+        		<Run Text="NFL Teams"/>
+            </TextBlock>
+        </StackPanel>
+
+        <!-- Removed the add button (There are no more teams... )-->
+        <!-- View all the professional NFL Teams -->
+        <!-- They will be clickable so a user can choose to set their fave-->
+        <!-- If they haven't already-->
+        <ScrollViewer Grid.Column="1" Margin="4.334,133,0.666,58">
+            <ListBox
+                x:Name="teamsListBox"
+                SelectionMode="Single"
+                Height="auto"
+                Width="auto"
+                Background="#DEF2C8"
+                Foreground="#14080E"
+                Opacity=".7"
+                FontFamily="Georgia"
+                FontSize="15" 
+                SelectionChanged="itemSelected_Changed">
+            </ListBox>
+        </ScrollViewer>
+
+        <!-- Panel 2 -->
+        <!--<StackPanel
+            x:Name="panel2"
+            Visibility="Collapsed"
+            Grid.Column="1"
+            Background="#14080E">
+            <ListBox
+                x:Name="itemSelectedListBox"
+                Height="570"
+                Background="Transparent"
+                Foreground="#C5DAC1">
+                
+            </ListBox>
+            <Button
+                x:Name="toTeams"
+                FontFamily="Georgia"
+                FontSize="25"
+                Background="Transparent"
+                Foreground="#DEF2C8"
+                BorderBrush="{x:Null}"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center" 
+                Click="BackToTeams_Click">
+                Back to Teams
+            </Button>
+        </StackPanel>-->
+        
+        <!--Instructions-->
+        <TextBlock
+            x:Name="instructions"
+            Foreground="#C5DAC1"
+            HorizontalAlignment="Center"
+            FontFamily="Georgia"
+            FontWeight="Bold"
+            FontSize="20" 
+            Grid.Column="1"
+            Margin="5,600,0.833,-5">
+            Click a team to set your favorite.
+        </TextBlock>
+    </Grid>
+</Page>
