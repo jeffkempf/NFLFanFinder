@@ -1,0 +1,397 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="nflff_dbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Bars">
+          <Key>
+            <PropertyRef Name="BarID" />
+          </Key>
+          <Property Name="BarID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="BarName" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="BarStreet" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="BarCity" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="BarState" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="BarPhone" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="BarZip" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Events">
+          <Key>
+            <PropertyRef Name="EventID" />
+          </Key>
+          <Property Name="EventID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="EventType" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="EventLocationID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Games">
+          <Key>
+            <PropertyRef Name="GameID" />
+          </Key>
+          <Property Name="GameID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="HomeTeam" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="AwayTeam" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="StadiumID" Type="int" Nullable="false" />
+          <Property Name="GameTime" Type="time" Precision="7" />
+          <Property Name="GameDate" Type="date" />
+        </EntityType>
+        <EntityType Name="Groups">
+          <Key>
+            <PropertyRef Name="GroupID" />
+          </Key>
+          <Property Name="GroupID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="GroupName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="GroupOwnerID" Type="int" Nullable="false" />
+          <Property Name="CreationDate" Type="datetime" />
+          <Property Name="GameID" Type="int" Nullable="false" />
+          <Property Name="EventType" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="EventLocationName" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Confirmed" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="MemberGroups">
+          <Key>
+            <PropertyRef Name="MemGrpID" />
+          </Key>
+          <Property Name="MemGrpID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="GroupID" Type="int" Nullable="false" />
+          <Property Name="MemberID" Type="int" Nullable="false" />
+          <Property Name="GameID" Type="int" />
+        </EntityType>
+        <EntityType Name="Members">
+          <Key>
+            <PropertyRef Name="MemberID" />
+          </Key>
+          <Property Name="MemberID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UserName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Password" Type="nvarchar" MaxLength="32" Nullable="false" />
+          <Property Name="City" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="State" Type="nvarchar" MaxLength="30" Nullable="false" />
+          <Property Name="FavTeamID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Stadiums">
+          <Key>
+            <PropertyRef Name="StadiumID" />
+          </Key>
+          <Property Name="StadiumID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="StadiumName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="StadiumAddress" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="StadiumCity" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="StadiumState" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="StadiumZip" Type="int" Nullable="false" />
+          <Property Name="HomeTeamID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Teams">
+          <Key>
+            <PropertyRef Name="TeamID" />
+          </Key>
+          <Property Name="TeamID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TeamName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="TeamCity" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <Function Name="ClickBarName" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="bname" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="ClickGroupName" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="gname" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="ClickScheduledGame" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="gid" Type="int" Mode="In" />
+        </Function>
+        <Function Name="getAllBars" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <EntityContainer Name="nflff_dbModelStoreContainer">
+          <EntitySet Name="Bars" EntityType="Self.Bars" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Events" EntityType="Self.Events" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Games" EntityType="Self.Games" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Groups" EntityType="Self.Groups" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="MemberGroups" EntityType="Self.MemberGroups" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Members" EntityType="Self.Members" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Stadiums" EntityType="Self.Stadiums" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Teams" EntityType="Self.Teams" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="nflff_dbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Bar">
+          <Key>
+            <PropertyRef Name="BarID" />
+          </Key>
+          <Property Name="BarID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="BarName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="BarStreet" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="BarCity" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="BarState" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="BarPhone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="BarZip" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Event">
+          <Key>
+            <PropertyRef Name="EventID" />
+          </Key>
+          <Property Name="EventID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EventType" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="EventLocationID" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Game">
+          <Key>
+            <PropertyRef Name="GameID" />
+          </Key>
+          <Property Name="GameID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="HomeTeam" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="AwayTeam" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="StadiumID" Type="Int32" Nullable="false" />
+          <Property Name="GameTime" Type="Time" Precision="7" />
+          <Property Name="GameDate" Type="DateTime" Precision="0" />
+        </EntityType>
+        <EntityType Name="Group">
+          <Key>
+            <PropertyRef Name="GroupID" />
+          </Key>
+          <Property Name="GroupID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="GroupName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="GroupOwnerID" Type="Int32" Nullable="false" />
+          <Property Name="CreationDate" Type="DateTime" Precision="3" />
+          <Property Name="GameID" Type="Int32" Nullable="false" />
+          <Property Name="EventType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="EventLocationName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Confirmed" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="MemberGroup">
+          <Key>
+            <PropertyRef Name="MemGrpID" />
+          </Key>
+          <Property Name="MemGrpID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="GroupID" Type="Int32" Nullable="false" />
+          <Property Name="MemberID" Type="Int32" Nullable="false" />
+          <Property Name="GameID" Type="Int32" />
+        </EntityType>
+        <EntityType Name="Member">
+          <Key>
+            <PropertyRef Name="MemberID" />
+          </Key>
+          <Property Name="MemberID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Password" Type="String" MaxLength="32" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="City" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="State" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="FavTeamID" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Stadium">
+          <Key>
+            <PropertyRef Name="StadiumID" />
+          </Key>
+          <Property Name="StadiumID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="StadiumName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="StadiumAddress" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="StadiumCity" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="StadiumState" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="StadiumZip" Type="Int32" Nullable="false" />
+          <Property Name="HomeTeamID" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Team">
+          <Key>
+            <PropertyRef Name="TeamID" />
+          </Key>
+          <Property Name="TeamID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TeamName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="TeamCity" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="nflff_dbEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Bars" EntityType="Self.Bar" />
+          <EntitySet Name="Events" EntityType="Self.Event" />
+          <EntitySet Name="Games" EntityType="Self.Game" />
+          <EntitySet Name="Groups" EntityType="Self.Group" />
+          <EntitySet Name="MemberGroups" EntityType="Self.MemberGroup" />
+          <EntitySet Name="Members" EntityType="Self.Member" />
+          <EntitySet Name="Stadiums" EntityType="Self.Stadium" />
+          <EntitySet Name="Teams" EntityType="Self.Team" />
+          <FunctionImport Name="ClickBarName" ReturnType="Collection(nflff_dbModel.ClickBarName_Result)">
+            <Parameter Name="bname" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="ClickGroupName" ReturnType="Collection(String)">
+            <Parameter Name="gname" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="ClickScheduledGame" ReturnType="Collection(nflff_dbModel.ClickScheduledGame_Result)">
+            <Parameter Name="gid" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="getAllBars" ReturnType="Collection(nflff_dbModel.getAllBars_Result)" />
+          <FunctionImport Name="GetMembersByGroup" EntitySet="Members" ReturnType="Collection(nflff_dbModel.Member)">
+            <Parameter Name="gname" Mode="In" Type="String" />
+          </FunctionImport>
+        </EntityContainer>
+        <ComplexType Name="ClickBarName_Result">
+          <Property Type="String" Name="BarStreet" Nullable="false" MaxLength="255" />
+          <Property Type="String" Name="BarCity" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="BarState" Nullable="false" MaxLength="50" />
+        </ComplexType>
+        <ComplexType Name="ClickScheduledGame_Result">
+          <Property Type="String" Name="BARS" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="Stadium" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="WatchParties" Nullable="true" MaxLength="100" />
+        </ComplexType>
+        <ComplexType Name="getAllBars_Result">
+          <Property Type="Int32" Name="BarID" Nullable="false" />
+          <Property Type="String" Name="BarName" Nullable="false" MaxLength="255" />
+          <Property Type="String" Name="BarStreet" Nullable="false" MaxLength="255" />
+          <Property Type="String" Name="BarCity" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="BarState" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="BarPhone" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="BarZip" Nullable="false" MaxLength="50" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="nflff_dbModelStoreContainer" CdmEntityContainer="nflff_dbEntities">
+          <EntitySetMapping Name="Bars">
+            <EntityTypeMapping TypeName="nflff_dbModel.Bar">
+              <MappingFragment StoreEntitySet="Bars">
+                <ScalarProperty Name="BarID" ColumnName="BarID" />
+                <ScalarProperty Name="BarName" ColumnName="BarName" />
+                <ScalarProperty Name="BarStreet" ColumnName="BarStreet" />
+                <ScalarProperty Name="BarCity" ColumnName="BarCity" />
+                <ScalarProperty Name="BarState" ColumnName="BarState" />
+                <ScalarProperty Name="BarPhone" ColumnName="BarPhone" />
+                <ScalarProperty Name="BarZip" ColumnName="BarZip" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Events">
+            <EntityTypeMapping TypeName="nflff_dbModel.Event">
+              <MappingFragment StoreEntitySet="Events">
+                <ScalarProperty Name="EventID" ColumnName="EventID" />
+                <ScalarProperty Name="EventType" ColumnName="EventType" />
+                <ScalarProperty Name="EventLocationID" ColumnName="EventLocationID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Games">
+            <EntityTypeMapping TypeName="nflff_dbModel.Game">
+              <MappingFragment StoreEntitySet="Games">
+                <ScalarProperty Name="GameID" ColumnName="GameID" />
+                <ScalarProperty Name="HomeTeam" ColumnName="HomeTeam" />
+                <ScalarProperty Name="AwayTeam" ColumnName="AwayTeam" />
+                <ScalarProperty Name="StadiumID" ColumnName="StadiumID" />
+                <ScalarProperty Name="GameTime" ColumnName="GameTime" />
+                <ScalarProperty Name="GameDate" ColumnName="GameDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Groups">
+            <EntityTypeMapping TypeName="nflff_dbModel.Group">
+              <MappingFragment StoreEntitySet="Groups">
+                <ScalarProperty Name="GroupID" ColumnName="GroupID" />
+                <ScalarProperty Name="GroupName" ColumnName="GroupName" />
+                <ScalarProperty Name="GroupOwnerID" ColumnName="GroupOwnerID" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="GameID" ColumnName="GameID" />
+                <ScalarProperty Name="EventType" ColumnName="EventType" />
+                <ScalarProperty Name="EventLocationName" ColumnName="EventLocationName" />
+                <ScalarProperty Name="Confirmed" ColumnName="Confirmed" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MemberGroups">
+            <EntityTypeMapping TypeName="nflff_dbModel.MemberGroup">
+              <MappingFragment StoreEntitySet="MemberGroups">
+                <ScalarProperty Name="MemGrpID" ColumnName="MemGrpID" />
+                <ScalarProperty Name="GroupID" ColumnName="GroupID" />
+                <ScalarProperty Name="MemberID" ColumnName="MemberID" />
+                <ScalarProperty Name="GameID" ColumnName="GameID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Members">
+            <EntityTypeMapping TypeName="nflff_dbModel.Member">
+              <MappingFragment StoreEntitySet="Members">
+                <ScalarProperty Name="MemberID" ColumnName="MemberID" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="FavTeamID" ColumnName="FavTeamID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Stadiums">
+            <EntityTypeMapping TypeName="nflff_dbModel.Stadium">
+              <MappingFragment StoreEntitySet="Stadiums">
+                <ScalarProperty Name="StadiumID" ColumnName="StadiumID" />
+                <ScalarProperty Name="StadiumName" ColumnName="StadiumName" />
+                <ScalarProperty Name="StadiumAddress" ColumnName="StadiumAddress" />
+                <ScalarProperty Name="StadiumCity" ColumnName="StadiumCity" />
+                <ScalarProperty Name="StadiumState" ColumnName="StadiumState" />
+                <ScalarProperty Name="StadiumZip" ColumnName="StadiumZip" />
+                <ScalarProperty Name="HomeTeamID" ColumnName="HomeTeamID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Teams">
+            <EntityTypeMapping TypeName="nflff_dbModel.Team">
+              <MappingFragment StoreEntitySet="Teams">
+                <ScalarProperty Name="TeamID" ColumnName="TeamID" />
+                <ScalarProperty Name="TeamName" ColumnName="TeamName" />
+                <ScalarProperty Name="TeamCity" ColumnName="TeamCity" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="ClickBarName" FunctionName="nflff_dbModel.Store.ClickBarName">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="nflff_dbModel.ClickBarName_Result">
+                <ScalarProperty Name="BarStreet" ColumnName="BarStreet" />
+                <ScalarProperty Name="BarCity" ColumnName="BarCity" />
+                <ScalarProperty Name="BarState" ColumnName="BarState" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="ClickGroupName" FunctionName="nflff_dbModel.Store.ClickGroupName" />
+          <FunctionImportMapping FunctionImportName="ClickScheduledGame" FunctionName="nflff_dbModel.Store.ClickScheduledGame">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="nflff_dbModel.ClickScheduledGame_Result">
+                <ScalarProperty Name="BARS" ColumnName="BARS" />
+                <ScalarProperty Name="Stadium" ColumnName="Stadium" />
+                <ScalarProperty Name="WatchParties" ColumnName="WatchParties" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="getAllBars" FunctionName="nflff_dbModel.Store.getAllBars">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="nflff_dbModel.getAllBars_Result">
+                <ScalarProperty Name="BarID" ColumnName="BarID" />
+                <ScalarProperty Name="BarName" ColumnName="BarName" />
+                <ScalarProperty Name="BarStreet" ColumnName="BarStreet" />
+                <ScalarProperty Name="BarCity" ColumnName="BarCity" />
+                <ScalarProperty Name="BarState" ColumnName="BarState" />
+                <ScalarProperty Name="BarPhone" ColumnName="BarPhone" />
+                <ScalarProperty Name="BarZip" ColumnName="BarZip" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="GetMembersByGroup" FunctionName="nflff_dbModel.Store.ClickGroupName" />
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
