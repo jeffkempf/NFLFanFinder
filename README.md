@@ -4,14 +4,20 @@ Windows Phone App that allows users to find other fans of their favorite team to
 This was a group project.  The roles were divided as follows:
 
 Janci Dundigalla: database, stored procedures
+
 Misha Claytor: UI design, navigation
+
 Jeff Kempf: back-end code (server and client), validation, testing, analytics
 
 Specifics:
 Platform: Windows Phone 8.1
+
 Client Code: C# and XAML
+
 Server Code: C#
+
 Server: Web API2 and Entity Framework
+
 Database: Azure SQL Server
 
 Server Info: 
