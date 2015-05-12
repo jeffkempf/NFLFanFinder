@@ -10,6 +10,7 @@ Misha Claytor: UI design, navigation
 Jeff Kempf: back-end code (server and client), validation, testing, analytics
 
 Specifics:
+
 Platform: Windows Phone 8.1
 
 Client Code: C# and XAML
